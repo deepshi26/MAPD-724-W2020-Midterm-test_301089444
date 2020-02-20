@@ -1,3 +1,6 @@
+
+//Name:Deepshi
+//Student Id:301089444
 import UIKit
 import AVFoundation
 import SpriteKit
@@ -41,7 +44,7 @@ class GameScene: SKScene {
         
         // add plane
         self.planeSprite = Plane()
-        self.planeSprite?.position = CGPoint(x: -575, y: 0)
+        self.planeSprite?.position = CGPoint(x: -300, y: 0)
         self.addChild(planeSprite!)
         
         // add island
@@ -80,17 +83,17 @@ class GameScene: SKScene {
     
     func touchDown(atPoint pos : CGPoint)
     {
-        self.planeSprite?.TouchMove(newPos: CGPoint(x: -575,y: pos.y ))
+        self.planeSprite?.TouchMove(newPos: CGPoint(x: -300,y: pos.y ))
     }
     
     func touchMoved(toPoint pos : CGPoint)
     {
-        self.planeSprite?.TouchMove(newPos: CGPoint(x: -575,y:pos.y ))
+        self.planeSprite?.TouchMove(newPos: CGPoint(x: -300,y:pos.y ))
     }
     
     func touchUp(atPoint pos : CGPoint)
     {
-        self.planeSprite?.TouchMove(newPos: CGPoint(x: -575,y: pos.y))
+        self.planeSprite?.TouchMove(newPos: CGPoint(x: -300,y: pos.y))
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)

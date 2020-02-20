@@ -1,3 +1,5 @@
+//Name:Deepshi
+//Student Id:301089444
 import SpriteKit
 import GameplayKit
 
@@ -8,7 +10,7 @@ class Cloud: GameObject
     //constructor
     init()
     {
-        super.init(imageString: "cloud", initialScale: 1.5)
+        super.init(imageString: "cloud", initialScale: 0.5)
         Start()
     }
     

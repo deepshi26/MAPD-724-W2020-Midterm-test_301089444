@@ -1,3 +1,5 @@
+//Name:Deepshi
+//Student Id:301089444
 import SpriteKit
 import GameplayKit
 
@@ -8,7 +10,7 @@ class Island: GameObject
     //constructor
     init()
     {
-        super.init(imageString: "island", initialScale: 2.0)
+        super.init(imageString: "island", initialScale: 1.5)
         Start()
     }
     
@@ -27,15 +29,15 @@ class Island: GameObject
         }
         
         // right boundary
-        if(self.position.y >= 307 - self.halfWidth!)
+        if(self.position.y >= 180 - self.halfWidth!)
         {
-            self.position.y = 307 - self.halfWidth!
+            self.position.y = 180 - self.halfWidth!
         }
         
         // left boundary
-        if(self.position.y <= -307 + self.halfWidth!)
+        if(self.position.y <= -180 + self.halfWidth!)
         {
-            self.position.y = -307 + self.halfWidth!
+            self.position.y = -180 + self.halfWidth!
         }
     }
     
